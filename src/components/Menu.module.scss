@@ -1,0 +1,25 @@
+.menu {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  & .navLink {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+   
+  }
+
+  & .navLink:hover {
+    transform: scale(110%);
+    transition: all .2s;
+  }
+
+  & .activeLink {
+   border: 1px solid white;
+   
+  }
+}

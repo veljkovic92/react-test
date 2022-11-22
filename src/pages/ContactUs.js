@@ -1,3 +1,4 @@
+import classes from "./ContactUs.module.scss";
 import { useState } from "react";
 
 const ContactUs = () => {
@@ -46,39 +47,55 @@ const ContactUs = () => {
   const messageIsinvalid = !messageIsValid && messageIsTouched;
 
   return (
-    <section>
+    <section className={classes["contact-us"]}>
+      <h2>Fill out the form below to inquire for any bike</h2>
       <form>
-        <div>
-          <label htmlFor="name-input">Name</label>
-          <input
-            id="name-input"
-            type="text"
-            onChange={onNameChangeHandler}
-            onBlur={onNameBlurHandler}
-          />
-          <p>{nameIsInvalid && "Please add more than 4 characters!"}</p>
+        <div className={classes["name-field"]}>
+          <div className={classes["name-body"]}>
+            <label htmlFor="name-input">Name</label>
+            <input
+              id="name-input"
+              type="text"
+              onChange={onNameChangeHandler}
+              onBlur={onNameBlurHandler}
+            />
+          </div>
+          <div className={classes["name-info"]}>
+            <p>{nameIsInvalid && "Please add more than 4 characters!"}</p>
+          </div>
         </div>
-        <div>
-          <label htmlFor="email-input">Email</label>
-          <input
-            id="email-input"
-            type="email"
-            onChange={onEmailChangeHandler}
-            onBlur={onEmailBlurHandler}
-          />
-          <p>{emailIsinvalid && "Please add correct email!"}</p>
+        <div className={classes["email-field"]}>
+          <div className={classes["email-body"]}>
+            <label htmlFor="email-input">Email</label>
+            <input
+              id="email-input"
+              type="email"
+              onChange={onEmailChangeHandler}
+              onBlur={onEmailBlurHandler}
+            />
+          </div>
+          <div className={classes["email-info"]}>
+            <p>{emailIsinvalid && "Please add correct email!"}</p>
+          </div>
         </div>
-        <div>
-          <label htmlFor="message-input">Your Message</label>
-          <input
-            id="message-input"
-            type="text"
-            maxLength="100"
-            onChange={onMessageChangeHandler}
-            onBlur={onMessageBlurHandler}
-          />
-          <p>{messageIsinvalid && "Please don't exceed the message length limit!"}</p>
-          <p>..... number of left characters</p>
+        <div className={classes["message-field"]}>
+          <div className={classes["message-body"]}>
+            <label htmlFor="message-input">Message</label>
+            <input
+              id="message-input"
+              type="text"
+              maxLength="100"
+              onChange={onMessageChangeHandler}
+              onBlur={onMessageBlurHandler}
+            />
+          </div>
+          <div className={classes["message-info"]}>
+            <p>..... number of left characters</p>
+            <p>
+              {messageIsinvalid &&
+                "Please don't exceed the message length limit!"}
+            </p>
+          </div>
         </div>
       </form>
     </section>

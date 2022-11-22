@@ -1,12 +1,12 @@
 {
-  "Ninja": {
-    "brand": "Kawasaki",
-    "model": "ZX10R",
+  "Fireblade": {
+    "brand": "Honda",
+    "model": "CBRR1000RR",
     "year": 2021,
-    "power": 200,
-    "price": 18.99,
+    "power": 210,
+    "price": 19.99,
     "legal": true,
-    "image": "https://www.motorbeam.com/wp-content/uploads/2021-Kawasaki-Ninja-ZX-10R-Review-2-1536x1024.jpg"
+    "image": "https://mcn-images.bauersecure.com/wp-images/4890/honda-cbr1000rr-r-sp-30th-anniversary-01.jpg"
   },
   "Transformer": {
     "brand": "Yamaha",

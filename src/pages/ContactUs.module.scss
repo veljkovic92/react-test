@@ -1,0 +1,72 @@
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    & .name-field, .email-field, .message-field {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & .name-field {
+      & .name-body {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      & .name-info {
+       & p {
+        margin: 0;
+        height: 2rem;
+        
+       }
+      }
+    }
+
+    & .email-field {
+      & .email-body {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      & .email-info {
+        & p {
+         margin: 0;
+         height: 2rem;
+        }
+       }
+    }
+
+    & .message-field {
+      display: flex;
+      flex-direction: column;
+      
+      & .message-body {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      & .message-info {
+        display: flex;
+        flex-direction: column;
+
+        & p {
+          margin: 0;
+          height: 2rem;
+         }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+$primary-color: rgb(265, 65, 65);
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & h2 {
+    color: $primary-color;
+  }
+
+  & button {
+    background-color: inherit;
+    border: 1px solid $primary-color;
+    color: inherit;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px $primary-color;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  & button:hover {
+    transform: scale(102%);
+    box-shadow: 1px 1px 20px 1px $primary-color;
+  }
+}

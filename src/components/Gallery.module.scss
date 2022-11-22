@@ -1,0 +1,44 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  
+  & h2 {
+    margin: 0;
+  }
+
+  & .bike-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  & .bike-bot {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+
+    & .bike-info {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      text-shadow: 1px 1px 10px 1px black;
+
+      & p {
+        background: rgb(256, 256, 256, .8);
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  & .bike-bot img {
+    width: 100%;
+  }
+}
