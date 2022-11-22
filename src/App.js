@@ -1,10 +1,11 @@
-import { Redirect, Route, Switch, useHistory } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-import Gallery from "./components/Gallery";
-import Layout from "./layout/Layout";
+import Gallery from "./pages/Gallery/Gallery";
+import Layout from "./layout/Layout/Layout";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
+import Bike from "./pages/Bike";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path="/gallery" exact>
           <Gallery />
+        </Route>
+        <Route path="/gallery/:bikeName">
+          <Bike />
         </Route>
         <Route path="/contact-us" exact>
           <ContactUs />

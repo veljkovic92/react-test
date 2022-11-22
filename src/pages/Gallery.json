@@ -1,5 +1,6 @@
-{
-  "Fireblade": {
+[
+  {
+    "name": "Fireblade",
     "brand": "Honda",
     "model": "CBRR1000RR",
     "year": 2021,
@@ -8,7 +9,8 @@
     "legal": true,
     "image": "https://mcn-images.bauersecure.com/wp-images/4890/honda-cbr1000rr-r-sp-30th-anniversary-01.jpg"
   },
-  "Transformer": {
+  {
+    "name": "Transformer",
     "brand": "Yamaha",
     "model": "MT10",
     "year": 2022,
@@ -17,7 +19,8 @@
     "legal": true,
     "image": "https://cdn2.yamaha-motor.eu/prod/product-assets/2022/MT10/2022-Yamaha-MT10-EU-Tech_Black-Accessorized-static-004-03.jpg"
   },
-  "Busa": {
+  {
+    "name": "Busa",
     "brand": "Suzuki",
     "model": "Hayabusa",
     "year": 2021,
@@ -26,7 +29,8 @@
     "legal": true,
     "image": "https://ultimatemotorcycling.com/wp-content/uploads/2021/06/2022-suzuki-hayabusa-review-utah-motorsports-part-12.jpg"
   },
-  "Dragon": {
+  {
+    "name": "Dragon",
     "brand": "Kawasaki",
     "model": "H2R",
     "year": 2019,
@@ -35,4 +39,4 @@
     "legal": false,
     "image": "https://www.designisthis.com/blog/images/uploads/2015/10/kawasaki-ninja-h2r-supercharged-motorcycle.jpg"
   }
-}
+]

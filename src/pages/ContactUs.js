@@ -38,18 +38,27 @@ const ContactUs = () => {
     setMessageIsTouched(true);
   };
 
+  const calculateChars = 500 - message.length;
+
   const nameIsValid = name.length >= 4;
   const emailIsValid = email.includes("@");
-  const messageIsValid = message.length < 1 || message.length <= 100;
+  const messageIsValid = message.length > 10 && message.length <= 100;
 
   const nameIsInvalid = !nameIsValid && nameIsTouched;
   const emailIsinvalid = !emailIsValid && emailIsTouched;
-  const messageIsinvalid = !messageIsValid && messageIsTouched;
+  const messageIsInvalid = !messageIsValid && messageIsTouched;
 
   return (
     <section className={classes["contact-us"]}>
       <h2>Fill out the form below to inquire for any bike</h2>
-      <form>
+      <form onSubmit={(event) => {
+        event.preventDefault();
+        alert(`Form data:
+          name: ${name}
+          email: ${email}
+          message: ${message}
+        `)
+      }}>
         <div className={classes["name-field"]}>
           <div className={classes["name-body"]}>
             <label htmlFor="name-input">Name</label>
@@ -90,12 +99,13 @@ const ContactUs = () => {
             />
           </div>
           <div className={classes["message-info"]}>
-            <p>..... number of left characters</p>
+            <p>{calculateChars} number of left characters</p>
             <p>
-              {messageIsinvalid &&
-                "Please don't exceed the message length limit!"}
+              {messageIsInvalid &&
+                "Message should be between 10 and 500 characters long!"}
             </p>
           </div>
+          <div><button type="submit">Contact Us</button></div>
         </div>
       </form>
     </section>

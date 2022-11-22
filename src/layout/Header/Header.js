@@ -1,4 +1,4 @@
-import Menu from "../components/Menu";
+import Menu from "../../components/Menu/Menu";
 import classes from "./Header.module.scss";
 
 const Header = () => {
