@@ -1,0 +1,38 @@
+{
+  "Ninja": {
+    "brand": "Kawasaki",
+    "model": "ZX10R",
+    "year": 2021,
+    "power": 200,
+    "price": 18.99,
+    "legal": true,
+    "image": "https://www.motorbeam.com/wp-content/uploads/2021-Kawasaki-Ninja-ZX-10R-Review-2-1536x1024.jpg"
+  },
+  "Transformer": {
+    "brand": "Yamaha",
+    "model": "MT10",
+    "year": 2022,
+    "power": 165,
+    "price": 17.0,
+    "legal": true,
+    "image": "https://cdn2.yamaha-motor.eu/prod/product-assets/2022/MT10/2022-Yamaha-MT10-EU-Tech_Black-Accessorized-static-004-03.jpg"
+  },
+  "Busa": {
+    "brand": "Suzuki",
+    "model": "Hayabusa",
+    "year": 2021,
+    "power": 200,
+    "price": 18.0,
+    "legal": true,
+    "image": "https://ultimatemotorcycling.com/wp-content/uploads/2021/06/2022-suzuki-hayabusa-review-utah-motorsports-part-12.jpg"
+  },
+  "Dragon": {
+    "brand": "Kawasaki",
+    "model": "H2R",
+    "year": 2019,
+    "power": 310,
+    "price": 55.0,
+    "legal": false,
+    "image": "https://www.designisthis.com/blog/images/uploads/2015/10/kawasaki-ninja-h2r-supercharged-motorcycle.jpg"
+  }
+}
