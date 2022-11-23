@@ -7,7 +7,7 @@
     "power": 210,
     "price": 19.99,
     "legal": true,
-    "image": "https://mcn-images.bauersecure.com/wp-images/4890/honda-cbr1000rr-r-sp-30th-anniversary-01.jpg"
+    "image": "../assets/images/fireblade.jpg"
   },
   {
     "name": "Transformer",
@@ -17,7 +17,7 @@
     "power": 165,
     "price": 17.0,
     "legal": true,
-    "image": "https://cdn2.yamaha-motor.eu/prod/product-assets/2022/MT10/2022-Yamaha-MT10-EU-Tech_Black-Accessorized-static-004-03.jpg"
+    "image": "../assets/images/transformer.jpg"
   },
   {
     "name": "Busa",
@@ -27,7 +27,7 @@
     "power": 200,
     "price": 18.0,
     "legal": true,
-    "image": "https://ultimatemotorcycling.com/wp-content/uploads/2021/06/2022-suzuki-hayabusa-review-utah-motorsports-part-12.jpg"
+    "image": "../assets/images/busa.jpg"
   },
   {
     "name": "Dragon",
@@ -37,6 +37,6 @@
     "power": 310,
     "price": 55.0,
     "legal": false,
-    "image": "https://www.designisthis.com/blog/images/uploads/2015/10/kawasaki-ninja-h2r-supercharged-motorcycle.jpg"
+    "image": "../assets/images/dragon.jpg"
   }
 ]
