@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Fireblade",
+    "brand": "Honda",
+    "model": "CBRR1000RR",
+    "cylinders": 4,
+    "year": 2021,
+    "power": 210,
+    "price": 19.99,
+    "legal": true,
+    "image": "../assets/images/fireblade.jpg",
+    "desc": "The Honda Fireblade rocked the Superbike world when we introduced it 30 years ago. And now it’s time to crack open some champagne. For 2022, we’re producing a special anniversary version of the CBR1000RR-R Fireblade SP, with special graphics."
+  },
+  {
+    "name": "Transformer",
+    "brand": "Yamaha",
+    "model": "MT10",
+    "cylinders": 4,
+    "year": 2022,
+    "power": 165,
+    "price": 17.0,
+    "legal": true,
+    "image": "../assets/images/transformer.jpg",
+    "desc": "The pinnacle of MT crossplane torque, distinct styling and agile handling lets you dominate the Darkness."
+  },
+  {
+    "name": "Busa",
+    "brand": "Suzuki",
+    "model": "Hayabusa",
+    "cylinders": 4,
+    "year": 2021,
+    "power": 200,
+    "price": 18.0,
+    "legal": true,
+    "image": "../assets/images/busa.jpg",
+    "desc": "The Suzuki Hayabusa has firmly established its status as motorcycling’s Ultimate Sportbike. The 2023 version of Suzuki’s flagship sportbike is propelled by a muscular, refined inline four-cylinder engine housed in a proven and thoroughly updated chassis with incomparable manners, managed by an unequaled suite of electronic rider aids within stunning aerodynamic bodywork that is distinctly Hayabusa."
+  },
+  {
+    "name": "Dragon",
+    "brand": "Kawasaki",
+    "model": "H2R",
+    "cylinders": 4,
+    "year": 2019,
+    "power": 310,
+    "price": 55.0,
+    "legal": false,
+    "image": "../assets/images/dragon.jpg",
+    "desc": "The development of the Ninja H2®R motorcycle goes beyond the boundaries of any other Kawasaki motorcycle. Born through the unprecedented collaboration between multiple divisions within the Kawasaki Heavy Industries, Ltd. (KHI) organization, the world's only limited-production supercharged model represents the unbridled pinnacle of Kawasaki engineering, with astonishing acceleration and mind-bending top speed suitable only for the track. "
+  },
+  {
+    "name": "Cyclops",
+    "brand": "Yamaha",
+    "model": "MT09",
+    "cylinders": 3,
+    "year": 2022,
+    "power": 120,
+    "price": 9.0,
+    "legal": true,
+    "image": "../assets/images/cyclops.jpg",
+    "desc": "The industry benchmark in hyper naked performance and razor sharp handling with its thrilling 890cc triple‑cylinder engine and radical next‑generation design."
+  },
+  {
+    "name": "Mecha",
+    "brand": "Suzuki",
+    "model": "GSX8S",
+    "cylinders": 2,
+    "year": 2023,
+    "power": 90,
+    "price": 8.0,
+    "legal": true,
+    "image": "../assets/images/mecha.jpg",
+    "desc": "Work hard, play harder. The all-new GSX-8S features a torquey 776cc, 270° crank, parallel twin that delivers exciting performance and an exhilarating soundtrack throughout the rev range. A 5” TFT colour dash, bi-directional quick-shifter and aggressive design make for a refined yet thrilling ride on every journey."
+  }
+]

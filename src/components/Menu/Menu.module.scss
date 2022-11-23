@@ -1,21 +1,56 @@
 .menu {
- 
+  display: flex;
+  gap: 10px;
 
-  & .navLink {
-    text-decoration: none;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-   
+  .links {
+    display: flex;
+    position: relative;
+    transition: 0.2s;
+
+    & .navLink {
+      text-decoration: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+
+      &:hover {
+        transform: scale(110%);
+        transition: all 0.2s;
+      }
+    }
+
+    & .activeLink {
+      border: 1px solid white;
+    }
+
+    @media (max-width: 1024px) {
+      padding: 10px;
+      flex-direction: column;
+      position: absolute;
+      background: rgb(52, 52, 255);
+      top: 100%;
+      right: -100%;
+    }
   }
 
-  & .navLink:hover {
-    transform: scale(110%);
-    transition: all .2s;
+  .linksActive {
+    right: 0%;
   }
 
-  & .activeLink {
-   border: 1px solid white;
-   
+  .burger {
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+    border: unset;
+    background: unset;
+    outline: none;
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .burgerActive {
+    transform: rotate(90deg);
   }
 }

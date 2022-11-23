@@ -1,0 +1,28 @@
+.bike-info {
+  display: flex;
+  width: 100%;
+  position: relative;
+  font-size: large;
+  overflow: hidden;
+  border-radius: 10px;
+
+  ul {
+    position: absolute;
+    padding: 20px;
+    margin: 0;
+    background: rgb(0, 0, 0, 0.5);
+    z-index: 1;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    list-style: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px 2px black;
+  }
+  .bike-img-container {
+    img {
+      width: 100%;
+      transform: scaleX(-1);
+      border-radius: 10px;
+    }
+  }
+}

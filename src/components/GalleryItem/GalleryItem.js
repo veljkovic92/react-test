@@ -4,6 +4,8 @@ import classes from "./GalleryItem.module.scss";
 
 const GalleryItem = ({ bike }) => {
   const history = useHistory();
+  const price = bike.price.toFixed(3);
+  console.log(price);
 
   return (
     <div className={classes.bike}>
@@ -15,9 +17,9 @@ const GalleryItem = ({ bike }) => {
       </div>
       <div className={classes["bike-bot"]}>
         <div className={classes["bike-info"]}>
-          <p>Horse Power: {bike.power}</p>
+          <p>Horse Power: {bike.power}hp</p>
           <p>{bike.legal ? "Street Legal" : "Race Only"}</p>
-          <p>Price: {bike.price}</p>
+          <p>Price: {price}eur</p>
         </div>
         <img
           alt={bike.name}

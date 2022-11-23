@@ -1,11 +1,11 @@
 import { Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Gallery from "./pages/Gallery/Gallery";
 import Layout from "./layout/Layout/Layout";
-import About from "./pages/About";
-import ContactUs from "./pages/ContactUs";
-import NotFound from "./pages/NotFound";
-import Bike from "./pages/Bike";
+import About from "./pages/About/About";
+import ContactUs from "./pages/ContactUs/ContactUs";
+import NotFound from "./pages/NotFound/NotFound";
+import Bike from "./pages/Bike/Bike";
 
 function App() {
   return (

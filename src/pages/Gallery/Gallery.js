@@ -1,4 +1,4 @@
-import bikes from "../Gallery.json";
+import bikes from "../../api/Gallery.json";
 import GalleryItem from "../../components/GalleryItem/GalleryItem";
 import classes from './Gallery.module.scss';
 

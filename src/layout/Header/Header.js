@@ -18,6 +18,7 @@ const Header = () => {
       <div className={classes.mid}>
        
         <button
+        className={classes.pageNameBtn}
           onClick={() => {
             console.log(`You are at page: ${location.pathname}`);
           }}

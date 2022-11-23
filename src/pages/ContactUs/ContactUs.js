@@ -1,5 +1,6 @@
 import classes from "./ContactUs.module.scss";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -13,6 +14,8 @@ const ContactUs = () => {
   const [message, setMessage] = useState("");
   const [messageIsTouched, setMessageIsTouched] = useState(false);
   // const [messageIsValid, setMessageIsValid] = useState(false);
+
+  const [formIsValid, setFormIsValid] = useState(false);
 
   const onNameChangeHandler = (event) => {
     setName(event.target.value);
@@ -48,17 +51,27 @@ const ContactUs = () => {
   const emailIsinvalid = !emailIsValid && emailIsTouched;
   const messageIsInvalid = !messageIsValid && messageIsTouched;
 
+  useEffect(() => {
+    if (nameIsValid && emailIsValid && messageIsValid) {
+      setFormIsValid(true);
+    } else {
+      setFormIsValid(false);
+    }
+  }, [nameIsValid, emailIsValid, messageIsValid]);
+
   return (
     <section className={classes["contact-us"]}>
       <h2>Fill out the form below to inquire for any bike</h2>
-      <form onSubmit={(event) => {
-        event.preventDefault();
-        alert(`Form data:
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+          alert(`Form data:
           name: ${name}
           email: ${email}
           message: ${message}
-        `)
-      }}>
+        `);
+        }}
+      >
         <div className={classes["name-field"]}>
           <div className={classes["name-body"]}>
             <label htmlFor="name-input">Name</label>
@@ -99,13 +112,21 @@ const ContactUs = () => {
             />
           </div>
           <div className={classes["message-info"]}>
-            <p>{calculateChars} number of left characters</p>
+            <p>{calculateChars} characters left</p>
             <p>
               {messageIsInvalid &&
-                "Message should be between 10 and 500 characters long!"}
+                "Message must be between 10 and 500 characters long!"}
             </p>
           </div>
-          <div><button type="submit">Contact Us</button></div>
+          <div>
+            <button
+              className={classes["submit-btn"]}
+              type="submit"
+              disabled={!formIsValid}
+            >
+              Contact Us
+            </button>
+          </div>
         </div>
       </form>
     </section>

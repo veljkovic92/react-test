@@ -4,25 +4,26 @@
   justify-content: center;
   align-items: center;
 
+  h2 {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
   & form {
     display: flex;
     flex-direction: column;
     width: 40%;
 
-    & .name-field, .email-field, .message-field {
+    & .name-field,
+    .email-field,
+    .message-field {
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      & label {
-        flex-basis: 30%;
-      }
-
-      & input {
-        flex-basis: 70%;
-      }
-
-      .name-info, .email-info, .message-info {
+      margin-bottom: 1rem;
+      .name-info,
+      .email-info,
+      .message-info {
         align-self: flex-end;
       }
     }
@@ -33,16 +34,14 @@
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
-
-        
       }
 
       & .name-info {
-       & p {
-        margin: 0;
-        height: 2rem;
-        
-       }
+        & p {
+          margin: 0;
+          color: red;
+          font-style: italic;
+        }
       }
     }
 
@@ -55,16 +54,17 @@
       }
       & .email-info {
         & p {
-         margin: 0;
-         height: 2rem;
+          margin: 0;
+          color: red;
+          font-style: italic;
         }
-       }
+      }
     }
 
     & .message-field {
       display: flex;
       flex-direction: column;
-      
+
       & .message-body {
         display: flex;
         width: 100%;
@@ -78,9 +78,40 @@
 
         & p {
           margin: 0;
-          height: 2rem;
-         }
+          text-align: right;
+          font-style: italic;
+          &:last-child {
+            color: red;
+          }
+        }
       }
+    }
+
+    .submit-btn {
+      background: rgba(52, 52, 255);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: 1px solid white;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin: 20px 0;
+      &:hover {
+        transform: scale(105%);
+      }
+
+      &:disabled {
+        background: rgb(158, 158, 158);
+        cursor: default;
+
+        &:hover {
+          transform: scale(100%);
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
     }
   }
 }
