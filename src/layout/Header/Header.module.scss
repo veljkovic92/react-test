@@ -9,7 +9,7 @@
   align-items: center;
   padding: 20px 40px;
   background: rgba(52, 52, 255, 0.9);
-  z-index: 1;
+  z-index: 10;
 
   .left, .mid, .right {
     flex-basis: 33%;

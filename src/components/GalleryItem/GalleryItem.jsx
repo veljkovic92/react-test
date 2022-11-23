@@ -4,7 +4,7 @@ import classes from "./GalleryItem.module.scss";
 
 const GalleryItem = ({ bike }) => {
   const history = useHistory();
-  
+
   return (
     <div className={classes.bike}>
       <div className={classes["bike-top"]}>
