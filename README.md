@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+MOTO WORLD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Introduction
 
-## Available Scripts
+The project is purposely built for the company "Admolite" and it's theme is a "Moto World" App which shows the most bought motorcycles in the last month and allows user to complete a contact us form to inquire about specific bike/s.
 
-In the project directory, you can run:
+2. Structure of the App
 
-### `npm start`
+The App contains following pages:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Home,
+- About,
+- Gallery,
+- Bike detail page/s,
+- Contact Us,
+- Not Found
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Content of the App on 24/11/2022:
 
-### `npm test`
+- Home page allows user to see the main banner that states the purpose of the app, below it is the brief text that describes the branding itself and also the last 4 added bikes at the current month with brief info. Each bike can be interacted on and leads to bike's details page.
+- About page contains the header and more detailed informations about the goal of the brand.
+- Gallery represents all of the current motorcycles with brief informations of most frequently asked bike details. Each bike is interactive and leads to bike details page.
+- Bike details page shows bikes title, description and all of the bikes available informations with the bike cover.
+- Contact Us page contains the title and form which has three inputs and submit button. Form has validation and will require user to type name that is longer than five characters, email that has @ in itself and message that is longer than five and shorter than five hundred characters. The button will be disabled as long as the three inputs are in invalid state. Clicking on activated button collects all of the inputs information and showcases them into alert().
+- Not Found page contains a title, description and button that redirects user back to home page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The App is completely responsive for both mobile and desktop devices.
 
-### `npm run build`
+3. Technologies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The project is based on:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- JavaScript,
+- HTML,
+- CSS (SASS),
+- React,
+- React Router,
+- React Icons
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Requirements to run the App:
 
-### `npm run eject`
+1) Git Clone or download App,
+2) Open the App in your prefered Code Reader (Project was built in Visual Studio Code),
+3) Run "npm install" in your terminal,
+4) Run "npm start"
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
